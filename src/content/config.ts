@@ -34,4 +34,18 @@ const bookReview = defineCollection({
 	}),
 })
 
-export const collections = { blog, 'book-reviews': bookReview }
+const projects = defineCollection({
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		pubDate: z.coerce.date(),
+		updatedDate: z.coerce.date().optional(),
+		heroImage: z.string().optional(),
+		link: z.string().optional(),
+		repo: z.string().optional(),
+		techStack: z.array(z.string()).optional(),
+		featured: z.boolean().optional(),
+	}),
+})
+
+export const collections = { blog, 'book-reviews': bookReview, projects }

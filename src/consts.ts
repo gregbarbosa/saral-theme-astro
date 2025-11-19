@@ -42,6 +42,10 @@ export const WebsiteLinks = [
 		url: 'book-reviews',
 	},
 	{
+		name: 'Projects',
+		url: 'projects',
+	},
+	{
 		name: 'About',
 		url: 'about',
 	},
