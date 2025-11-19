@@ -5,6 +5,7 @@ import heroImage from '../assets/images/gregbarbosa.jpg'
 import { SITE_BASE, SocialLinks } from '../consts'
 import { Icon } from 'astro-icon/components'
 import BlogCard from '../components/BlogCard.astro'
+import HeroMask from '../components/HeroMask.astro'
 import { getCollection } from 'astro:content'
 
 const posts = (await getCollection('blog'))
@@ -13,6 +14,7 @@ const posts = (await getCollection('blog'))
 ---
 
 <BaseLayout>
+	<HeroMask />
 	<main
 		id="main-content"
 		class="app-container flex flex-col gap-12 justify-center py-36 md:py-28 pt-44 md:pt-46 relative"
@@ -44,7 +46,8 @@ const posts = (await getCollection('blog'))
 				<Image
 					src={heroImage}
 					alt="Greg Barbosa"
-					class="[clip-path:ellipse(50%_40%_at_50%_50%)]"
+					class="w-full h-auto"
+					style="clip-path: url(#hero-mask); -webkit-clip-path: url(#hero-mask);"
 					loading="eager"
 				/>
 			</div>
