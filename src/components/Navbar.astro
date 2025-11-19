@@ -135,14 +135,6 @@ import LogoSVG from '../assets/logo.svg'
 			reComputeTheme()
 		})
 
-	// run recomputeTheme when screen crosses 768px
-	window.matchMedia('(min-width: 768px)').addEventListener('change', (_e) => {
-		addThemeEventListeners()
-		reComputeTheme()
-	})
-
-	reComputeTheme()
-
 	// Run on page load
 	window.addEventListener('DOMContentLoaded', () => {
 		addThemeEventListeners()
