@@ -46,6 +46,10 @@ export const WebsiteLinks = [
 		url: '/projects',
 	},
 	{
+		name: 'Freebies',
+		url: '/freebies',
+	},
+	{
 		name: 'Speaking',
 		url: '/speaking',
 	},

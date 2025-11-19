@@ -48,4 +48,22 @@ const projects = defineCollection({
 	}),
 })
 
-export const collections = { blog, 'reading-list': readingList, projects }
+const freebies = defineCollection({
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		category: z.enum(['final-cut-pro', 'lightroom', 'ios-shortcuts', 'other']),
+		downloadUrl: z.string(),
+		coverImage: z.string().optional(),
+		featured: z.boolean().optional(),
+		pubDate: z.coerce.date(),
+		updatedDate: z.coerce.date().optional(),
+	}),
+})
+
+export const collections = {
+	blog,
+	'reading-list': readingList,
+	projects,
+	freebies,
+}
