@@ -20,7 +20,7 @@ const blog = defineCollection({
 	}),
 })
 
-const bookReview = defineCollection({
+const readingList = defineCollection({
 	schema: z.object({
 		title: z.string(),
 		author: z.string(),
@@ -48,4 +48,4 @@ const projects = defineCollection({
 	}),
 })
 
-export const collections = { blog, 'book-reviews': bookReview, projects }
+export const collections = { blog, 'reading-list': readingList, projects }

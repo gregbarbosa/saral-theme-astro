@@ -35,18 +35,22 @@ export const SocialLinks = [
 export const WebsiteLinks = [
 	{
 		name: 'Blog',
-		url: 'blog',
+		url: '/blog',
 	},
 	{
-		name: 'Books',
-		url: 'book-reviews',
+		name: 'Reading List',
+		url: '/reading-list',
 	},
 	{
 		name: 'Projects',
-		url: 'projects',
+		url: '/projects',
+	},
+	{
+		name: 'Speaking',
+		url: '/speaking',
 	},
 	{
 		name: 'About',
-		url: 'about',
+		url: '/about',
 	},
 ]

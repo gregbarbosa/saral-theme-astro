@@ -5,13 +5,13 @@ import Navbar from '../../components/Navbar.astro'
 import Footer from '../../components/Footer.astro'
 
 export async function getStaticPaths() {
-	const reviews = await getCollection('book-reviews')
+	const reviews = await getCollection('reading-list')
 	return reviews.map((review) => ({
 		params: { slug: review.slug },
 		props: review,
 	}))
 }
-type Props = CollectionEntry<'book-reviews'>
+type Props = CollectionEntry<'reading-list'>
 
 const review = Astro.props
 const { Content } = await review.render()
@@ -26,8 +26,14 @@ const { Content } = await review.render()
 		/>
 	</head>
 	<body>
+		<a
+			href="#main-content"
+			class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:bg-background focus:text-foreground focus:p-4"
+		>
+			Skip to main content
+		</a>
 		<Navbar />
-		<main>
+		<main id="main-content">
 			<article>
 				<div class="prose">
 					<div class="title">
