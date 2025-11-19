@@ -1,7 +1,7 @@
 ---
 title: 'Stillness is the Key'
 author: 'Ryan Holiday'
-rating: '5/5'
+rating: ''
 genre: 'Philosophy'
 format: 'Hardcover'
 link: 'https://amzn.to/3yOTCSY'

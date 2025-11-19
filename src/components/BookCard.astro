@@ -52,11 +52,13 @@ const coverPath = review.data.cover
 		{review.data.description || 'No description available.'}
 	</p>
 	<div class="mt-auto flex justify-between items-center">
-		<span
-			class="text-sm font-medium bg-primary/10 text-primary px-2 py-1 rounded"
-		>
-			{review.data.rating}
-		</span>
+		{
+			review.data.rating && (
+				<span class="text-sm font-medium bg-primary/10 text-primary px-2 py-1 rounded">
+					{review.data.rating}
+				</span>
+			)
+		}
 		{
 			review.data.fullReview && (
 				<a

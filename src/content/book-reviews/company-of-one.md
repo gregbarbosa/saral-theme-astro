@@ -1,7 +1,7 @@
 ---
 title: 'Company of One'
 author: 'Paul Jarvis'
-rating: '5/5'
+rating: ''
 genre: 'Business'
 format: 'Kindle'
 link: 'https://amzn.to/3n2vv0H'

@@ -1,7 +1,7 @@
 ---
 title: 'Profit First'
 author: 'Mike Michalowicz'
-rating: '5/5'
+rating: ''
 genre: 'Business'
 format: 'Audiobook'
 link: 'https://amzn.to/42jX0Ty'
